@@ -24,12 +24,10 @@ function readLine() {
 
 // Complete the solve function below.
 function solve(meal_cost, tip_percent, tax_percent) {
-   /* 20
-    .20
-    1.20
-    mealcost * 1.20 */
-    let tip = parseFloat(tip_percent / 100);
-    console.log(tip);
+    let totalCost = Math.round(parseFloat(meal_cost) + (parseFloat(tip_percent / 100).toFixed(2) * meal_cost) + (parseFloat(tax_percent / 100).toFixed(2) * meal_cost));
+    console.log(totalCost);
+    return totalCost
+    
 
 
     
