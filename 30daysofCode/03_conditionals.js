@@ -27,4 +27,15 @@ function readLine() {
 function main() {
     const N = parseInt(readLine(), 10);
     console.log(N);
+    console.log(N);
+    if (N % 2 == 0) {
+       // console.log("N is even:", N);
+    } else if (!N % 2 == 0) {
+        console.log("Weird");
+    }
 }
+
+//Test N w console.log();
+//sort N if(even) or if (odd) w conditionals using % and 2
+//test with console.log();
+//odd numbers will print 'Weird' w console.log()
