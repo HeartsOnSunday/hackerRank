@@ -28,11 +28,11 @@ function main() {
     const N = parseInt(readLine(), 10);
     //console.log(N);
     if (N % 2 == 0 && N > 20) {
-        console.log("N is even and greater than 20:", N);
+        console.log("Not Weird");
     } else if (N % 2 == 0 && N <= 20 && N >= 6){
-console.log("N is even, greater than 6 and less than 20", N);
+console.log("Not Weird");
     } else if (N % 2 == 0 && N <= 5 && N >=2) {
-console.log("N is even, less than or equal to 5 and greater than or equal to 2");
+console.log("Not Weird");
     } else if (!N % 2 == 0) {
         console.log("Weird", N);
     }
@@ -44,3 +44,4 @@ console.log("N is even, less than or equal to 5 and greater than or equal to 2")
 //test conditional to print 'Weird' w console.log() for even numers over 20
 //test conditional to sort even numbers greater than 6 and less than 20
 //test conditional to sort even numbers less than or equal to 5 and greater than or equal to 2
+
