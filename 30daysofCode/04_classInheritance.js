@@ -20,17 +20,19 @@ function readLine() {
 
 function Person(initialAge){
     // Add some more code to run some checks on initialAge
-    if (initialAge > 0) {
-        let age = initialAge;
-    } else {
+    let age = initialAge;
+    if (age < 0) {
         age = 0;
         console.log("Age is not valid, setting age to 0...");
+        return 0;
+    } else {
+    //fix conditional
     }
   this.amIOld=function(){
    // Do some computations in here and print out the correct statement to the console
-      if (initialAge < 13) {
+      if (age < 13) {
           console.log("You are young.");
-      } else if (initialAge >= 13 && initialAge < 18) {
+      } else if (age >= 13 && initialAge < 18) {
           console.log("You are a teenager");
       } else {
           console.log("You are old");
